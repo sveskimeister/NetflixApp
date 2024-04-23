@@ -1,0 +1,1 @@
+C:\Users\svesk\source\repos\NetflixApp\NetflixApp\NetflixApp.csproj;x64
