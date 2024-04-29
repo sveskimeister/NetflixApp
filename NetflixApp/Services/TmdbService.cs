@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NetflixApp.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Json;
@@ -21,10 +22,23 @@ namespace NetflixApp.Services
 
         private HttpClient HttpClient => _httpClientFactory.CreateClient(TmdbHttpClientName);
 
-        public async Task<IEnumerable<Result>> GetTrendingAsync()
+        public async Task<IEnumerable<Media>> GetTrendingAsync() =>
+            await GetMediaAsync(TmdbUrls.Trending);
+
+        public async Task<IEnumerable<Media>> GetTopRatedAsync() =>
+            await GetMediaAsync(TmdbUrls.TopRated);
+
+        public async Task<IEnumerable<Media>> GetNetflixOriginalsAsync() =>
+            await GetMediaAsync(TmdbUrls.NetflixOriginals);
+
+        public async Task<IEnumerable<Media>> GetActionAsync() =>
+            await GetMediaAsync(TmdbUrls.Action);
+
+        private async Task<IEnumerable<Media>> GetMediaAsync(string url)
         {
-            var trendingMoviesCollection = await HttpClient.GetFromJsonAsync<Movie>($"{TmdbUrls.Trending}&api_key={ApiKey}");
-            return trendingMoviesCollection.results;
+            var trendingMoviesCollection = await HttpClient.GetFromJsonAsync<Movie>($"{url}&api_key={ApiKey}");
+            return trendingMoviesCollection.results
+                .Select(r => r.ToMediaObject());
         }
     }
     public static class TmdbUrls
@@ -67,6 +81,19 @@ namespace NetflixApp.Services
         public string ThumbnailSmall => $"https://image.tmdb.org/t/p/w220_and_h330_face/{ThumbnailPath}";
         public string ThumbnailUrl => $"https://image.tmdb.org/t/p/original/{ThumbnailPath}";
         public string DisplayTitle => title ?? name ?? original_title ?? original_name;
+
+        public Media ToMediaObject() =>
+            new Media()
+            {
+                Id = id,
+                DisplayTitle = DisplayTitle,
+                MediaType = media_type,
+                Overview = overview,
+                ReleaseDate = release_date,
+                Thumbnail = Thumbnail,
+                ThumbnailSmall = ThumbnailSmall,
+                ThumbnailUrl = ThumbnailUrl,
+            };
     }
 
 

@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Logging;
 using NetflixApp.Pages;
 using NetflixApp.Services;
+using NetflixApp.ViewModels;
 
 namespace NetflixApp
 {
@@ -27,6 +28,7 @@ namespace NetflixApp
                 httpClient => httpClient.BaseAddress = new Uri("https://api.themoviedb.org"));
 
             builder.Services.AddSingleton<TmdbService>();
+            builder.Services.AddSingleton<HomeViewModel>();
             builder.Services.AddSingleton<MainPage>();
 
             return builder.Build();
