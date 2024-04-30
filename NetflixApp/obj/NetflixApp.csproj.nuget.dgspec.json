@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\opilane\\Source\\Repos\\NetflixApp\\NetflixApp\\NetflixApp.csproj": {}
+    "C:\\Users\\svesk\\OneDrive\\Documents\\NetflixApp\\NetflixApp\\NetflixApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\opilane\\Source\\Repos\\NetflixApp\\NetflixApp\\NetflixApp.csproj": {
+    "C:\\Users\\svesk\\OneDrive\\Documents\\NetflixApp\\NetflixApp\\NetflixApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\opilane\\Source\\Repos\\NetflixApp\\NetflixApp\\NetflixApp.csproj",
+        "projectUniqueName": "C:\\Users\\svesk\\OneDrive\\Documents\\NetflixApp\\NetflixApp\\NetflixApp.csproj",
         "projectName": "NetflixApp",
-        "projectPath": "C:\\Users\\opilane\\Source\\Repos\\NetflixApp\\NetflixApp\\NetflixApp.csproj",
-        "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\opilane\\Source\\Repos\\NetflixApp\\NetflixApp\\obj\\",
+        "projectPath": "C:\\Users\\svesk\\OneDrive\\Documents\\NetflixApp\\NetflixApp\\NetflixApp.csproj",
+        "packagesPath": "C:\\Users\\svesk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\svesk\\OneDrive\\Documents\\NetflixApp\\NetflixApp\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\opilane\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\svesk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -255,7 +255,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
         },
         "net7.0-ios16.1": {
           "targetAlias": "net7.0-ios",
@@ -379,7 +379,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
         },
         "net7.0-maccatalyst16.1": {
           "targetAlias": "net7.0-maccatalyst",
@@ -504,7 +504,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
         },
         "net7.0-windows10.0.19041": {
           "targetAlias": "net7.0-windows10.0.19041.0",
@@ -578,7 +578,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[7.0.18, 7.0.18]"
+              "version": "[7.0.17, 7.0.17]"
             },
             {
               "name": "Microsoft.Maui.Controls.Ref.win",
@@ -606,7 +606,7 @@
             },
             {
               "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[7.0.18, 7.0.18]"
+              "version": "[7.0.17, 7.0.17]"
             },
             {
               "name": "Microsoft.Windows.SDK.NET.Ref",
@@ -614,7 +614,7 @@
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[7.0.18, 7.0.18]"
+              "version": "[7.0.17, 7.0.17]"
             }
           ],
           "frameworkReferences": {
@@ -634,7 +634,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
