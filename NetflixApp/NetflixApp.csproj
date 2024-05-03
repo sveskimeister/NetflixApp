@@ -88,6 +88,12 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <MauiXaml Update="Controls\MovieRow.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 	<PropertyGroup>
 		<NoWarn>$(NoWarn);NU1605</NoWarn>
 		<NoWarn>$(NoWarn);XF001</NoWarn>

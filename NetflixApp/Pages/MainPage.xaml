@@ -5,6 +5,7 @@
              Shell.NavBarIsVisible="False"
              BackgroundColor="Black"
              xmlns:vm="clr-namespace:NetflixApp.ViewModels"
+             xmlns:controls="clr-namespace:NetflixApp.Controls"
              x:DataType="vm:HomeViewModel">
 
     <ContentPage.Resources>
@@ -93,6 +94,24 @@
                         
                     </HorizontalStackLayout>
                 </Grid>
+                
+                <controls:MovieRow Heading="Top Rated" 
+                                   Movies="{Binding TopRated}" 
+                                   IsLarge="False"
+                                   MediaSelected="MovieRow_MediaSelected"/>
+                <controls:MovieRow Heading="Originals" 
+                                   Movies="{Binding NetflixOriginals}" 
+                                   IsLarge="True"
+                                   MediaSelected="MovieRow_MediaSelected"/>
+                <controls:MovieRow Heading="Trending" 
+                                   Movies="{Binding Trending}" 
+                                   IsLarge="False"
+                                   MediaSelected="MovieRow_MediaSelected"/>
+                <controls:MovieRow Heading="Action" 
+                                   Movies="{Binding ActionMovies}" 
+                                   IsLarge="False"
+                                   MediaSelected="MovieRow_MediaSelected"/>
+            
             </VerticalStackLayout>
         </ScrollView>
         <Grid HeightRequest="35"
@@ -103,7 +122,7 @@
                        VerticalOptions="Start"
                        HeightRequest="30"
                        WidthRequest="30"/>
-                <HorizontalStackLayout VerticalOptions="Start"
+                <HorizontalStackLayout VerticalOptions="Center"
                                        Spacing="15"
                                        Margin="5, 0">
                     <ImageButton Source="search.png"

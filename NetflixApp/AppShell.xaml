@@ -1,11 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+
+  <?xml version="1.0" encoding="UTF-8" ?>
 <Shell
     x:Class="NetflixApp.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:pages="clr-namespace:NetflixApp.Pages"
-    Shell.FlyoutBehavior="Disabled"
-    Title="NetflixApp">
+    Shell.TabBarBackgroundColor="#121212"
+    Shell.TabBarTitleColor="White"
+    Shell.TabBarUnselectedColor="#545454"
+    Shell.FlyoutBehavior="Disabled">
 
     <TabBar>
         <ShellContent

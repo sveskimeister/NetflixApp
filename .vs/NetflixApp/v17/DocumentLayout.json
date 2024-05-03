@@ -1,12 +1,139 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\svesk\\OneDrive\\Desktop\\NetflixApp\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\svesk\\OneDrive\\Documents\\NetflixApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C089C57E-F3EC-4A57-890D-31174862FAE1}|NetflixApp\\NetflixApp.csproj|c:\\users\\svesk\\onedrive\\documents\\netflixapp\\netflixapp\\pages\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C089C57E-F3EC-4A57-890D-31174862FAE1}|NetflixApp\\NetflixApp.csproj|solutionrelative:netflixapp\\pages\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C089C57E-F3EC-4A57-890D-31174862FAE1}|NetflixApp\\NetflixApp.csproj|c:\\users\\svesk\\onedrive\\documents\\netflixapp\\netflixapp\\controls\\movierow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C089C57E-F3EC-4A57-890D-31174862FAE1}|NetflixApp\\NetflixApp.csproj|solutionrelative:netflixapp\\controls\\movierow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C089C57E-F3EC-4A57-890D-31174862FAE1}|NetflixApp\\NetflixApp.csproj|c:\\users\\svesk\\onedrive\\documents\\netflixapp\\netflixapp\\controls\\movierow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C089C57E-F3EC-4A57-890D-31174862FAE1}|NetflixApp\\NetflixApp.csproj|solutionrelative:netflixapp\\controls\\movierow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C089C57E-F3EC-4A57-890D-31174862FAE1}|NetflixApp\\NetflixApp.csproj|c:\\users\\svesk\\onedrive\\documents\\netflixapp\\netflixapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C089C57E-F3EC-4A57-890D-31174862FAE1}|NetflixApp\\NetflixApp.csproj|solutionrelative:netflixapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C089C57E-F3EC-4A57-890D-31174862FAE1}|NetflixApp\\NetflixApp.csproj|c:\\users\\svesk\\onedrive\\documents\\netflixapp\\netflixapp\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C089C57E-F3EC-4A57-890D-31174862FAE1}|NetflixApp\\NetflixApp.csproj|solutionrelative:netflixapp\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C089C57E-F3EC-4A57-890D-31174862FAE1}|NetflixApp\\NetflixApp.csproj|c:\\users\\svesk\\onedrive\\documents\\netflixapp\\netflixapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C089C57E-F3EC-4A57-890D-31174862FAE1}|NetflixApp\\NetflixApp.csproj|solutionrelative:netflixapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C089C57E-F3EC-4A57-890D-31174862FAE1}|NetflixApp\\NetflixApp.csproj|c:\\users\\svesk\\onedrive\\documents\\netflixapp\\netflixapp\\pages\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C089C57E-F3EC-4A57-890D-31174862FAE1}|NetflixApp\\NetflixApp.csproj|solutionrelative:netflixapp\\pages\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MovieRow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\svesk\\OneDrive\\Documents\\NetflixApp\\NetflixApp\\Controls\\MovieRow.xaml.cs",
+              "RelativeDocumentMoniker": "NetflixApp\\Controls\\MovieRow.xaml.cs",
+              "ToolTip": "C:\\Users\\svesk\\OneDrive\\Documents\\NetflixApp\\NetflixApp\\Controls\\MovieRow.xaml.cs",
+              "RelativeToolTip": "NetflixApp\\Controls\\MovieRow.xaml.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACUAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T18:47:25.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MovieRow.xaml",
+              "DocumentMoniker": "C:\\Users\\svesk\\OneDrive\\Documents\\NetflixApp\\NetflixApp\\Controls\\MovieRow.xaml",
+              "RelativeDocumentMoniker": "NetflixApp\\Controls\\MovieRow.xaml",
+              "ToolTip": "C:\\Users\\svesk\\OneDrive\\Documents\\NetflixApp\\NetflixApp\\Controls\\MovieRow.xaml",
+              "RelativeToolTip": "NetflixApp\\Controls\\MovieRow.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-03T17:59:31.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\svesk\\OneDrive\\Documents\\NetflixApp\\NetflixApp\\App.xaml.cs",
+              "RelativeDocumentMoniker": "NetflixApp\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\svesk\\OneDrive\\Documents\\NetflixApp\\NetflixApp\\App.xaml.cs",
+              "RelativeToolTip": "NetflixApp\\App.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T17:49:13.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\svesk\\OneDrive\\Documents\\NetflixApp\\NetflixApp\\Pages\\MainPage.xaml",
+              "RelativeDocumentMoniker": "NetflixApp\\Pages\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\svesk\\OneDrive\\Documents\\NetflixApp\\NetflixApp\\Pages\\MainPage.xaml",
+              "RelativeToolTip": "NetflixApp\\Pages\\MainPage.xaml",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAAAHIAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-03T17:16:25.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\svesk\\OneDrive\\Documents\\NetflixApp\\NetflixApp\\AppShell.xaml",
+              "RelativeDocumentMoniker": "NetflixApp\\AppShell.xaml",
+              "ToolTip": "C:\\Users\\svesk\\OneDrive\\Documents\\NetflixApp\\NetflixApp\\AppShell.xaml",
+              "RelativeToolTip": "NetflixApp\\AppShell.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-03T17:49:19.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\svesk\\OneDrive\\Documents\\NetflixApp\\NetflixApp\\App.xaml",
+              "RelativeDocumentMoniker": "NetflixApp\\App.xaml",
+              "ToolTip": "C:\\Users\\svesk\\OneDrive\\Documents\\NetflixApp\\NetflixApp\\App.xaml",
+              "RelativeToolTip": "NetflixApp\\App.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-03T17:49:01.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\svesk\\OneDrive\\Documents\\NetflixApp\\NetflixApp\\Pages\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "NetflixApp\\Pages\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\svesk\\OneDrive\\Documents\\NetflixApp\\NetflixApp\\Pages\\MainPage.xaml.cs",
+              "RelativeToolTip": "NetflixApp\\Pages\\MainPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T17:16:19.197Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
