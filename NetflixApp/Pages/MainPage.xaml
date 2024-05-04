@@ -137,5 +137,11 @@
             </FlexLayout>
             
         </Grid>
+
+		<controls:MovieInfoBox Media="{Binding SelectedMedia}"
+                               VerticalOptions="End"
+                               IsVisible="{Binding ShowMovieInfoBox}"
+                               Closed="MovieInfoBox_Closed"/>
+		
     </Grid>
 </ContentPage>

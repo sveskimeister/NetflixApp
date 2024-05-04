@@ -5,55 +5,55 @@
              xmlns:controls="clr-namespace:NetflixApp.Controls"
              x:Class="NetflixApp.Controls.MovieRow"
              x:Name="this">
-            
-    <VerticalStackLayout BackgroundColor="Black"
+
+	<VerticalStackLayout BackgroundColor="Black"
                          BindingContext="{x:Reference this}">
-        <Label Text="{Binding Heading}"
+		<Label Text="{Binding Heading}"
                FontAttributes="Bold"
                FontSize="16"
                HorizontalTextAlignment="Start"
                Margin="10, 15, 0, 5"
                />
 
-        <CollectionView ItemsSource="{Binding Movies}">
-            <CollectionView.ItemsLayout>
-                <LinearItemsLayout Orientation="Horizontal"
+		<CollectionView ItemsSource="{Binding Movies}">
+			<CollectionView.ItemsLayout>
+				<LinearItemsLayout Orientation="Horizontal"
                                    ItemSpacing="5"/>
-            </CollectionView.ItemsLayout>
-            <CollectionView.ItemTemplate>
-                <DataTemplate x:DataType="models:Media">
-                    <Border StrokeShape="RoundRectangle 5"
+			</CollectionView.ItemsLayout>
+			<CollectionView.ItemTemplate>
+				<DataTemplate x:DataType="models:Media">
+					<Border StrokeShape="RoundRectangle 5"
                             Stroke="Black"
                             StrokeThickness="1">
-                        <Border.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type controls:MovieRow}}, Path=MediaDetailsCommand}"
+						<Border.GestureRecognizers>
+							<TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type controls:MovieRow}}, Path=MediaDetailsCommand}"
                                                   CommandParameter="{Binding .}"/>
-                        </Border.GestureRecognizers>
-                        <Grid>
-                            <Image Aspect="AspectFill"
+						</Border.GestureRecognizers>
+						<Grid>
+							<Image Aspect="AspectFill"
                                HeightRequest="150"
                                WidthRequest="120"
                                IsVisible="{Binding Source={RelativeSource AncestorType={x:Type controls:MovieRow}}, Path=IsNotLarge}"
                                >
-                                <Image.Source>
-                                    <UriImageSource Uri="{Binding ThumbnailSmall}"/>
-                                </Image.Source>
-                            </Image>
-                            <Image Aspect="AspectFill"
+								<Image.Source>
+									<UriImageSource Uri="{Binding ThumbnailSmall}"/>
+								</Image.Source>
+							</Image>
+							<Image Aspect="AspectFill"
                                HeightRequest="200"
                                WidthRequest="150"
                                IsVisible="{Binding Source={RelativeSource AncestorType={x:Type controls:MovieRow}}, Path=IsLarge}"
                                >
-                                <Image.Source>
-                                    <UriImageSource Uri="{Binding ThumbnailSmall}"/>
-                                </Image.Source>
-                            </Image>
-                        </Grid>
-                    </Border>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
+								<Image.Source>
+									<UriImageSource Uri="{Binding ThumbnailSmall}"/>
+								</Image.Source>
+							</Image>
+						</Grid>
+					</Border>
+				</DataTemplate>
+			</CollectionView.ItemTemplate>
+		</CollectionView>
 
-    </VerticalStackLayout>
+	</VerticalStackLayout>
 
 </ContentView>
