@@ -1,12 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\NetflixApp",
-    "\\NetflixApp\\Controls",
-    "\\NetflixApp\\Models",
-    "\\NetflixApp\\Pages",
-    "\\NetflixApp\\ViewModels"
+    ""
   ],
-  "SelectedNode": "\\NetflixApp\\Controls\\MovieRow.xaml.cs",
+  "SelectedNode": "\\NetflixApp.sln",
   "PreviewInSolutionExplorer": false
 }

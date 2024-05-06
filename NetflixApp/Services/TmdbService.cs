@@ -22,23 +22,48 @@ namespace NetflixApp.Services
 
         private HttpClient HttpClient => _httpClientFactory.CreateClient(TmdbHttpClientName);
 
+        public async Task<IEnumerable<Genre>> GetGenresAsync()
+        {
+            var genresWrapper = await HttpClient.GetFromJsonAsync<GenreWrapper>($"{TmdbUrls.MovieGenres}&api_key={ApiKey}");
+            return genresWrapper.Genres;
+        }
+
         public async Task<IEnumerable<Media>> GetTrendingAsync() =>
-            await GetMediaAsync(TmdbUrls.Trending);
+            await GetMediasAsync(TmdbUrls.Trending);
 
         public async Task<IEnumerable<Media>> GetTopRatedAsync() =>
-            await GetMediaAsync(TmdbUrls.TopRated);
-
-        public async Task<IEnumerable<Media>> GetNetflixOriginalsAsync() =>
-            await GetMediaAsync(TmdbUrls.NetflixOriginals);
-
+            await GetMediasAsync(TmdbUrls.TopRated);
+        public async Task<IEnumerable<Media>> GetNetflixOriginalAsync() =>
+            await GetMediasAsync(TmdbUrls.NetflixOriginals);
         public async Task<IEnumerable<Media>> GetActionAsync() =>
-            await GetMediaAsync(TmdbUrls.Action);
+            await GetMediasAsync(TmdbUrls.Action);
 
-        private async Task<IEnumerable<Media>> GetMediaAsync(string url)
+        public async Task<IEnumerable<Video>?> GetTrailersAsync(int id, string type = "movie")
+        {
+            var videosWrapper = await HttpClient.GetFromJsonAsync<VideosWrapper>(
+                $"{TmdbUrls.GetTrailers(id, type)}&api_key={ApiKey}");
+
+            if (videosWrapper?.results?.Length > 0)
+            {
+                var trailerTeasers = videosWrapper.results.Where(VideosWrapper.FilterTrailerTeasers);
+                return trailerTeasers;
+            }
+            return null;
+        }
+
+        public async Task<MovieDetail> GetMediaDetailsAsync(int id, string type = "movie") =>
+            await HttpClient.GetFromJsonAsync<MovieDetail>
+            ($"{TmdbUrls.GetMovieDetails(id, type)}&api_key={ApiKey}");
+
+        public async Task<IEnumerable<Media>> GetSimilarAsync(int id, string type = "movie") =>
+            await GetMediasAsync(
+                $"{TmdbUrls.GetSimilar(id, type)}&api_key={ApiKey}");
+
+        private async Task<IEnumerable<Media>> GetMediasAsync(string url)
         {
             var trendingMoviesCollection = await HttpClient.GetFromJsonAsync<Movie>($"{url}&api_key={ApiKey}");
             return trendingMoviesCollection.results
-                .Select(r => r.ToMediaObject());
+                    .Select(r => r.ToMediaObject());
         }
     }
     public static class TmdbUrls
@@ -75,7 +100,7 @@ namespace NetflixApp.Services
         public string title { get; set; }
         public string name { get; set; }
         public bool video { get; set; }
-        public string media_type { get; set; } // "movie" or "tv"
+        public string media_type { get; set; }
         public string ThumbnailPath => poster_path ?? backdrop_path;
         public string Thumbnail => $"https://image.tmdb.org/t/p/w600_and_h900_bestv2/{ThumbnailPath}";
         public string ThumbnailSmall => $"https://image.tmdb.org/t/p/w220_and_h330_face/{ThumbnailPath}";
@@ -83,7 +108,7 @@ namespace NetflixApp.Services
         public string DisplayTitle => title ?? name ?? original_title ?? original_name;
 
         public Media ToMediaObject() =>
-            new Media()
+            new()
             {
                 Id = id,
                 DisplayTitle = DisplayTitle,
@@ -92,7 +117,7 @@ namespace NetflixApp.Services
                 ReleaseDate = release_date,
                 Thumbnail = Thumbnail,
                 ThumbnailSmall = ThumbnailSmall,
-                ThumbnailUrl = ThumbnailUrl,
+                ThumbnailUrl = ThumbnailUrl
             };
     }
 

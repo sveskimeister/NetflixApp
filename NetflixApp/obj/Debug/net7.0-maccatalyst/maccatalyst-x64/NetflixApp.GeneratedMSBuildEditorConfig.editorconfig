@@ -28,11 +28,29 @@ build_metadata.AdditionalFiles.ManifestResourceName = NetflixApp.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
+[C:/Users/svesk/OneDrive/Documents/NetflixApp/NetflixApp/Controls/MovieInfoBox.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = NetflixApp.Controls.MovieInfoBox.xaml
+build_metadata.AdditionalFiles.TargetPath = Controls\MovieInfoBox.xaml
+build_metadata.AdditionalFiles.RelativePath = Controls\MovieInfoBox.xaml
+
 [C:/Users/svesk/OneDrive/Documents/NetflixApp/NetflixApp/Controls/MovieRow.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = NetflixApp.Controls.MovieRow.xaml
 build_metadata.AdditionalFiles.TargetPath = Controls\MovieRow.xaml
 build_metadata.AdditionalFiles.RelativePath = Controls\MovieRow.xaml
+
+[C:/Users/svesk/OneDrive/Documents/NetflixApp/NetflixApp/Pages/CategoriesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = NetflixApp.Pages.CategoriesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\CategoriesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\CategoriesPage.xaml
+
+[C:/Users/svesk/OneDrive/Documents/NetflixApp/NetflixApp/Pages/DetailsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = NetflixApp.Pages.DetailsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\DetailsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\DetailsPage.xaml
 
 [C:/Users/svesk/OneDrive/Documents/NetflixApp/NetflixApp/Pages/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

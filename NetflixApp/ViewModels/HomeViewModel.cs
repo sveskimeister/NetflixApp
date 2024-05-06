@@ -1,12 +1,8 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using NetflixApp.Models;
 using NetflixApp.Services;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NetflixApp.ViewModels
 {
@@ -71,6 +67,16 @@ namespace NetflixApp.ViewModels
         }
 
         [RelayCommand]
-        private void SelectMedia(Media? media = null) => SelectedMedia = media;
+        private void SelectMedia(Media? media = null)
+        {
+            if (media is not null)
+            {
+                if (media.Id == SelectedMedia?.Id)
+                {
+                    media = null;
+                }
+            }
+            SelectedMedia = media;
+        }
     }
 }

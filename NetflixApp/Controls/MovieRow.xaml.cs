@@ -1,13 +1,15 @@
 using NetflixApp.Models;
+using System.Windows.Input;
 
 namespace NetflixApp.Controls;
 
-public class MediaSelectEventArgs : MediaSelectEventArgs
+public class MediaSelectEventArgs : EventArgs
 {
-    public MediaSelectEventArgs Media { get; set; }
+    public Media Media { get; set; }
 
     public MediaSelectEventArgs(Media media) => Media = media;
 }
+
 public partial class MovieRow : ContentView
 {
     public static readonly BindableProperty HeadingProperty =
@@ -42,12 +44,13 @@ public partial class MovieRow : ContentView
         get => (bool)GetValue(MovieRow.IsLargeProperty);
         set => SetValue(MovieRow.IsLargeProperty, value);
     }
+
     public bool IsNotLarge => !IsLarge;
 
     public ICommand MediaDetailsCommand { get; private set; }
     private void ExecuteMediaDetailsCommand(object parameter)
     {
-        if(parameter is Media media && media is not null)
+        if (parameter is Media media && media is not null)
         {
             MediaSelected?.Invoke(this, new MediaSelectEventArgs(media));
         }

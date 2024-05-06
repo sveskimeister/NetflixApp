@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NetflixApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+b3cacdc601cff72098069ce556dd01076d5eb474")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+a9e4c6a16dae2bc6b66aa4eec0ebea6e1944ec8d")]
 [assembly: System.Reflection.AssemblyProductAttribute("NetflixApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NetflixApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
